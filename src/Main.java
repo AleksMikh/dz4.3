@@ -3,8 +3,8 @@ public class Main {
         CreditPaymentService service = new CreditPaymentService();
         int period = 12;
         int amount = 1_000_000;
-        double i_rate = 9.99 / 100 / 12;
-        int payment = service.calculate(period, amount, i_rate);
+        double rate = 9.99 / 100 / 12;
+        int payment = service.calculate(period, amount, rate);
 
         System.out.println();
         System.out.println("Оплата в месяц за кредит на год");
